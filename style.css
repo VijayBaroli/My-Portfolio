@@ -1,0 +1,395 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    position: fixed;
+    right: 1.5%;
+    top:25%;
+    height: 50%;
+    width:15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    z-index: 1;
+}
+
+.navlink{
+    color: black;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.navlink:hover .nav-contain{
+    width: 11.5rem;
+    transition: all 100ms linear;
+
+}
+
+.navlink:hover .nav-text{
+    /* display: inline-block; */
+    animation: textoppacity 100ms linear forwards;
+}
+
+.nav-contain{
+    height: 3.5rem;
+    width: 3.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 30px;
+    background-color: yellow;
+    position: relative;
+}
+
+.nav-icon{
+    border-radius: 30px;
+    height: 3.4rem;
+    width: 3.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-text{
+    font-size: x-large;
+    font-weight: bold;
+    position: absolute;
+    opacity: 0;
+}
+
+#h-nav-text{
+    left: 45px;
+}
+#a-nav-text{
+    left: 25px;
+}
+#p-nav-text{
+    left: 30px;
+}
+#r-nav-text{
+    left: 35px;
+}
+#c-nav-text{
+    left: 15px;
+}
+
+
+/* CSS for all section -----------------------*/
+
+body{
+    background-image: linear-gradient(#0d1f23,#2d4a53,#0d1f23,#2d4a53,#0d1f23);
+}
+
+.sections{
+    height: 100vh;
+    /* border: 1px dotted black; */
+    color: aliceblue;
+}
+
+/* home section -------------------------------- */
+#home-section{
+    /* background-color: #0d1f23; */
+    background-image: url("img/home-background.jpg");
+    background-size: cover;
+    background-attachment:fixed;
+    opacity: 1;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.h-center{
+    margin-left: 2rem;
+    height: 90%;
+    width: 57%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#heading{
+    height: 35%;
+    font-size: 5rem;
+}
+
+#brief{
+    height: 60%;
+    font-size: 2rem;
+}
+
+/* about section --------------------------------*/
+#about-section{
+    /* background-color: #132e35; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.a-heading{
+    text-align: center;
+    font-size: 4rem;
+    height: 10%;
+    width: 20%;
+    border-bottom: 2px solid white;
+}
+
+.a-center{
+    height: 80%;
+    width: 85%;
+    display: flex;
+}
+
+.a-contain{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.a-items{
+    font-size: x-large;
+    display: inline-block;
+}
+
+#a-name{
+    width: 80%;
+    font-size: 3rem;
+    border-bottom: 1px solid white;
+}
+
+.item-heading{
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.item-content{
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.item-sub{
+    font-size: 1rem;
+}
+
+.img-contain{
+    width: 30%;
+}
+
+#minion-img{
+    height: 30rem;
+    filter: drop-shadow(0px 0px 15px white);
+}
+
+
+/* project section -----------------------------------*/
+#project-section{
+    /* background-color: #0d1f23; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#p-text{
+    height: 15%;
+    width: 20%;
+    text-align: center;
+    font-size: 4rem;
+    border-bottom: 2px solid white;
+    padding-top: 1.9rem;
+}
+
+.p-center{
+    height: 80%;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+.project-items{
+    border: 2px solid white;
+    width: 30%;
+    height: 40%;
+    text-decoration: none;
+}
+
+#project6{
+    background-image: url("img/tic-tac-toe.png");
+    background-size: cover;
+}
+
+.p-items-cover{
+    background-color: yellow;
+    width: 0%;
+    height: 100%;
+    opacity: 0;
+    text-align: center;
+    font-size: xx-large;
+}
+.project-items:hover .p-items-cover{
+    width: 100%;
+    animation: textoppacity 100ms linear forwards;
+}
+
+/* Resume Section ------------------------------------*/
+#resume-section{
+    /* background-color: #132e35; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.r-center{
+    height: 80%;
+    width: 85%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.r-items{
+    height: 100%;
+    width: 40%;
+    text-align: center;
+}
+
+#rd{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#resume-img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/Vijay_Resume.pdf.png");
+    background-size: cover;
+    filter: blur(2px);
+    /* position: relative; */
+}
+
+#dwnld-icon{
+    display: inline-block;
+    position: absolute;
+    left: -16%;
+    top: 40%;
+    z-index: 1;
+    color: #5a636a;
+    opacity: 0;
+}
+
+#rd:hover #dwnld-icon{
+    opacity: 1;
+}
+
+#rd-btn{
+    font-size: x-large;
+    background-color: #afb3b7;
+    display: inline-block;
+    margin-top: 100px;
+    border: 2px solid silver;
+    border-radius: 30px;
+    padding:5px 10px;
+}
+
+
+/* Contact Section ----------------------------------- */
+#contact-section{
+    /* background-color: #0d1f23; */
+    background-image: url("img/home-background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 1;
+}
+
+#contact-container{
+    top: 8rem;
+    left: 10rem;
+    width: 28rem;
+    height: 33rem;
+    position: relative;
+}
+
+#contact-item{
+    background-image: url("img/home-background.jpg");
+    border: 2px solid #afb3b7;
+    width: 28rem;
+    height: 28rem;
+    padding: 1rem;
+    position: relative;
+    z-index: 1;
+    font-size: x-large;
+}
+
+#name, #email, #phone, #message{
+    background-color: transparent;
+    border:none;
+    border-bottom:2px solid #afb3b7;
+    display: block;
+    color: aliceblue;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 0.6rem;
+    margin-top: 0.3rem;
+}
+
+textarea{
+    resize: none;
+}
+
+#submit-btn{
+    height: 2.1rem;
+    width: 5rem;
+    font-size: large;
+    border-radius: 30px;
+}
+
+#social-links{
+    width: 28rem;
+    height: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.s-items{
+    color: aliceblue;
+}
+
+#note{
+    background-image: url("img/home-background.jpg");
+    border: 2px solid #afb3b7;
+    width: 14rem;
+    height: 7rem;
+    position: absolute;
+    top: -5rem;
+    right: -13rem;
+    padding: 0.6rem 0 0 1.5rem;
+}
+
+
+
+/* keyframes of animations ------------------------------- */
+
+@keyframes textoppacity {
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

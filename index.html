@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fa240806d1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <a href="#home-section" class="navlink">
+            <div class="nav-contain">
+                <span class="nav-text" id="h-nav-text">home</span>
+                <div class="nav-icon"><i class="fa-solid fa-house fa-xl"></i></div>
+            </div>
+        </a>
+        <a href="#about-section" class="navlink">
+            <div class="nav-contain">
+                <span class="nav-text" id="a-nav-text">about me</span>
+                <div class="nav-icon"><i class="fa-solid fa-address-card fa-xl"></i></div>
+            </div>
+        </a>
+        <a href="#project-section" class="navlink">
+            <div class="nav-contain">
+                <span class="nav-text" id="p-nav-text">projects</span>
+                <div class="nav-icon"><i class="fa-solid fa-code fa-xl"></i></div>
+            </div>
+        </a>
+        <a href="#resume-section" class="navlink">
+            <div class="nav-contain">
+                <span class="nav-text" id="r-nav-text">resume</span>
+                <div class="nav-icon"><i class="fa-solid fa-file fa-xl"></i></div>
+            </div>
+        </a>
+        <a href="#contact-section" class="navlink">
+            <div class="nav-contain">
+                <span class="nav-text" id="c-nav-text">contact me</span>
+                <div class="nav-icon"><i class="fa-solid fa-phone fa-xl"></i></div>
+            </div>
+        </a>
+    </nav>
+
+    <!-- Home Section--------------------------------------------- -->
+    <section class="sections" id="home-section">
+        <div class="h-center">
+            <div class="h-items" id="heading">
+                Hii, I Am a DEVELOPER!
+            </div>
+            <div class="h-items" id="brief">
+                I'm on a mission to create user-friendly experiences and innovative solutions. From front-end design to back-end development, my portfolio reflects my dedication to mastering the craft of coding.Join me on this journey as I turn ideas into reality, one line of code at a time.
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section--------------------------------------------- -->
+    <section class="sections" id="about-section">
+        <div class="a-heading">About me</div>
+        <div class="a-center">
+            <div class="a-contain">
+                <div class="a-items" id="a-name">NAME: VIJAY SINGH BAROLI</div>
+                <div class="a-items item-heading">TRAINING :</div>
+                <div class="a-items item-content">JAVA DEVELOPMENT: CETPA INFOTECH PVT. LTD.</div>
+                <div class="a-items item-sub">8 OCT 23 - 31 JAN 24</div>
+                <div class="a-items item-heading">QUALIFICATIONS :</div>
+                <div class="a-items item-content">PURSUING BCA(BACHELOR OF COMPUTER APPLICATION)</div>
+                <div class="a-items item-sub">FROM INDRA GANDHI NATIONAL OPEN UNIVERSITY</div>
+                <div class="a-items item-content">COMPLETED DIPLOMA IN ECE</div>
+                <div class="a-items item-sub">FROM ADITYA INSTITUTE OF TECHNOLOGY</div>
+            </div>
+            <div class="img-contain">
+                <img id="minion-img" src="img/minion3.png" alt="picture">
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section---------------------------------------------- -->
+    <section class="sections" id="project-section">
+        <div id="p-text">Projects</div>
+        <div class="p-center">
+            <a href="#" class="project-items">
+                <div class="p-items-cover">Chat Application</div>
+            </a>
+            <a href="#" class="project-items">
+                <div class="p-items-cover">Banking System</div>
+            </a>
+            <a href="#" class="project-items">
+                <div class="p-items-cover">Employee Time Tracker</div>
+            </a>
+            <a href="#" class="project-items">
+                <div class="p-items-cover">Customer Billing System</div>
+            </a>
+            <a href="#" class="project-items">
+                <div class="p-items-cover">Find Doctor API</div>
+            </a>
+            <a href="https://vijaybaroli.github.io/Tic-tac-toe/" class="project-items" id="project6">
+                <div class="p-items-cover">Tic-Tac-Toe</div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Resume Section-------------------------------------------- -->
+    <section class="sections" id="resume-section">
+        <div class="r-center">
+            <div class="r-items" id="ri">
+                <a id="rd" href="docs/Vijay_Resume.pdf">
+                    <div id="dwnld-icon"><i class="fa-solid fa-download fa-5x"></i></div>
+                    <div id="resume-img"></div>
+                </a>
+            </div>
+            <div class="r-items" id="di">
+                <h2>Skills</h2>
+                <hr>
+                <p>
+                    <br>
+                <div><u>Java</u></div>
+                <div>Core Java, OOps, Collection Framework, JDBC API, Servlet and JSP</div>
+                <br>
+                <div><u>Frameworks</u></div>
+                <div>Hibernate, Spring, Spring MVC, Spring Boot, Restful API, Spring Security</div>
+                <br>
+                <div><u>Testing</u></div>
+                <div>JUnit</div>
+                <br>
+                <div><u>Web Design</u></div>
+                <div>HTML5, CSS3, JavaScript</div>
+                <br>
+                <div><u>DBMS</u></div>
+                <div>SQL, MYSQL</div>
+                <br>
+                <div><u>Tools</u></div>
+                <div>Eclipse, VS Code, STS, Postman, Maven</div>
+
+                </p>
+                <span id="rd-btn"><a href="docs/Vijay_Resume.pdf">Download Resume</a></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section----------------------------------------------- -->
+    <section class="sections" id="contact-section">
+        <div id="contact-container">
+            <div id="contact-item">
+                <form action="#" method="post">
+                    
+                    <label for="name">Name :</label>
+                    <input type="text" name="name" id="name">
+
+                    <label for="email">Email* :</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="phone">Phone :</label>
+                    <input type="tel" name="phone" id="phone">
+
+                    <label for="message">Message* :</label>
+                    <textarea name="message" id="message" cols="30" rows="4" ></textarea>
+
+                    <input type="button" id="submit-btn" value="send"
+                        onclick="return alert('this feature is currently not available. You can use other methods to connect')">
+                </form>
+            </div>
+            <div id="social-links">
+                <a href="mailto:barolivijay@gmail.com" class="s-items"><i class="fa-solid fa-envelope fa-3x"></i></a>
+                <a href="https://www.linkedin.com/in/vijay-singh-baroli" class="s-items"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+                <a href="https://wa.me/8595196738" class="s-items"><i class="fa-brands fa-whatsapp fa-3x"></i></a>
+                <a href="https://github.com/VijayBaroli" class="s-items"><i class="fa-brands fa-github fa-3x"></i></a>
+                <a href="https://twitter.com/Vijay_Baroli" class="s-items"><i class="fa-brands fa-x-twitter fa-3x"></i></a>
+            </div>
+            <div id="note">
+                <p>Thanks for visiting! I hope you found what you need in my portfolio. If not, please feel free contact
+                    me using any of the methods below</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
